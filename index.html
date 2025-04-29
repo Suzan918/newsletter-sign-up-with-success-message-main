@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter Sign-up Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container" id="signup-form">
+    <div class="content">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul>
+        <li>Product discovery and building what matters</li>
+        <li>Measuring to ensure updates are a success</li>
+        <li>And much more!</li>
+      </ul>
+      <form id="subscription-form">
+        <div class="form-group">
+          <label for="email">Email address <span class="error-label" id="error-message">Valid email required</span></label>
+          <input type="text" id="email" placeholder="email@company.com">
+        </div>
+        <button type="submit">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+    <div class="illustration"></div>
+  </div>
+
+  <div class="success-message" id="success-message">
+    <img src="assets/images/icon-success.svg" alt="Success icon" width="64" height="64">
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to <span id="submitted-email">ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription.</p>
+    <button class="dismiss-btn" id="dismiss-btn">Dismiss message</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
